@@ -1,0 +1,16 @@
+.popup__container-image{
+    margin: auto;
+    box-shadow: 0 0 25px rgba(0,0,0, .15);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+@media screen and (min-width:320px) and (max-width:767px){
+    .popup__container-image{
+        margin: auto;
+    }
+}

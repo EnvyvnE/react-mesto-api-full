@@ -1,0 +1,14 @@
+.profile__avatar{
+    border-radius: 50%;
+    width:120px;
+    height: 120px;
+    background-image: url('../../../images/avatar.jpg');
+    background-size: cover;
+    
+  
+}
+.profile__avatar:hover{
+    opacity: .4;
+    transition: opacity .5s;
+    z-index: 0;
+}

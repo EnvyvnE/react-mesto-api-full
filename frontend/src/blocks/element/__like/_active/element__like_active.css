@@ -1,0 +1,4 @@
+.element__like_active {
+    opacity: 1;
+    background: url(../../../../images/filledHeart.svg) center no-repeat;
+  }

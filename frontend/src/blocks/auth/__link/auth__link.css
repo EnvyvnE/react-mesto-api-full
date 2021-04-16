@@ -1,0 +1,7 @@
+.auth__link{
+    text-decoration: none;
+    color: #fff;
+}
+.auth__link:hover{
+color:#ccc;
+}

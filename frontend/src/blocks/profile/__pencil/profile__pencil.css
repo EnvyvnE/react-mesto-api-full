@@ -1,0 +1,11 @@
+
+.profile__pencil{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../../images/pencile.svg');
+    background-repeat: no-repeat;
+    z-index: -1;
+}

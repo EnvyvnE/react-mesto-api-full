@@ -1,0 +1,14 @@
+.auth__btn{
+    margin-top: 216px;
+    border-radius: 2px;
+    background-color:#fff;
+    color: #000;
+    min-height: 50px;
+    font-family: 'Inter','Arial',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.auth__btn:hover{
+    background-color: #ccc;
+}

@@ -1,0 +1,14 @@
+.popup__container_alert{
+    min-width: 430px;
+    min-height: 330px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px){
+    .popup__container_alert{
+        min-width: 240px;
+        margin: auto;
+    }
+}

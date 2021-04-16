@@ -1,0 +1,10 @@
+.element__counter{
+    margin: 0;
+    padding: 0 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}

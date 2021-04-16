@@ -1,0 +1,16 @@
+.element__like{
+    background:  center/auto url(../../../images/likeBtn.svg) no-repeat;
+    margin: auto 30px auto 0;
+    border:none;
+    width: 20.7px;
+    height: 18.13px;
+    opacity: 1;
+  transition: 0.3s;
+  background-size:100%;
+    
+}
+.element__like:hover {
+    cursor: url(../../../images/cursor.png), default;
+    opacity: .5;
+    transition: opacity .5s;
+  }
