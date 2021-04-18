@@ -8,15 +8,25 @@ const { errors } = require('celebrate');
 const router = require('./routes/index.js');
 const NotFoundError = require('./errors/not-found-error');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
+const oprions ={
+  origin:['http://localhost:3000',
+'http://kv.mesto.nomoredomains.icu',
+'https://kv.mesto.nomoredomains.icu',
+'http://www.kv.mesto.nomoredomains.icu',
+'https://www.kv.mesto.nomoredomains.icu'],
+methods:['GET','HEAD','PUT','PATCH','POST','DELETE'],
+preflightContinue:false,
+optionsSuccessStatus:204,
+allowedHeaders:['Content-Type',
+'origin','Authorization','authorization'],
+credentials:true,
+};
 
 const { PORT = 3000 } = process.env;
 
 const app = express();
 
 app.use(requestLogger);
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 mongoose.connect('mongodb://localhost:27017/mestodb', {
   useNewUrlParser: true,
@@ -25,7 +35,12 @@ mongoose.connect('mongodb://localhost:27017/mestodb', {
   useUnifiedTopology: true,
   autoIndex: true,
 });
-app.use(cors());
+
+app.use('*',cors(options));
+
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/crash-test', () => {
   setTimeout(() => {
