@@ -8,7 +8,7 @@ const { errors } = require('celebrate');
 const router = require('./routes/index.js');
 const NotFoundError = require('./errors/not-found-error');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
-const oprions ={
+const options ={
   origin:['http://localhost:3000',
 'http://kv.mesto.nomoredomains.icu',
 'https://kv.mesto.nomoredomains.icu',
