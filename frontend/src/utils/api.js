@@ -112,6 +112,6 @@ class Api {
 
 }
 const api = new Api({
-    address: 'http://kv.api.mesto.nomoredomains.icu'
+    address: 'https://kv.api.mesto.nomoredomains.icu'
 });
 export default api;
